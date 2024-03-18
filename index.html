@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="shortcut icon" href="images/cloud.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container p-0">
+            <div class="row py-2">
+                <div class="col-md-3">
+                    <div class="items">
+                        <a class="branding d-flex justify-content-center align-items-center " href="/">
+                            <img src="images/cloud.png" alt="" class=" w-25">
+                            <div class="px-2">
+                                <h1> weather</h1>
+                                <p class="p-0 m-0">tagline goes here</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 offset-2">
+                    <div class="items">
+                        <ul class="list-unstyled py-3  d-flex justify-content-around align-items-center">
+                            <li class="home">Home</li>
+                            <li>News</li>
+                            <li>Live cameras</li>
+                            <li>photos</li>
+                            <li>contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class=" mt-5 ">
+            <input type="text" placeholder="Find your location..." id="search" class=" py-3 px-2"
+                oninput="days(this.value)">
+            <button type="submit" class="py-2 px-4 ">Find</button>
+        </form>
+    </div>
+
+    <div class="container px-3 mt-5">
+        <div class="row title ">
+            <div class="col-md-4 p-0  ">
+                <div class="item table-title1 d-flex justify-content-between p-2">
+                    <h6 id="day1"></h6>
+                    <h6 id="date"></h6>
+                </div>
+                <div class="table-title4 p-2">
+                    <div class="item ">
+                        <h6 id="locationName"></h6>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <p class="p" id="temp"></p>
+                            <img id="imgWeather1" alt="#" class="img pb-5">
+                        </div>
+                        <p class="text-primary" id="case"></p>
+                        <div class="foot  d-flex text-light p-1">
+                            <div class="d-flex me-3">
+                                <img src="images/icon-umberella.png" class="footer-icons mx-2" alt="">
+                                <p id="humidity">20%</p>
+                            </div>
+                            <div class="d-flex me-2">
+                                <img src="images/icon-wind.png" class="footer-icons mx-2" alt="">
+                                <p id="wind">18km/h</p>
+                            </div>
+                            <div class="d-flex me-2">
+                                <img src="images/icon-compass.png" class="footer-icons mx-2" alt="">
+                                <p id="wind_direction">East</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-0">
+                <div class="text-center table-title2  p-2">
+                    <h6 id="day2"></h6>
+                </div>
+                <div class="table-title5 py-3">
+                    <div class="item text-center py-4">
+                        <img id="secondDayImg" alt="">
+                        <h4 id="maxTemp1" class="mt-4 text-white"></h4>
+                        <h6 id="minTemp1"></h6>
+                        <p class="pt-4 text-primary" id="case1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  p-0">
+                <div class="item table-title3  p-2 text-center">
+                    <h6 id="day3"></h6>
+                </div>
+                <div class=" table-title6 py-3">
+                    <div class="item text-center py-4">
+                        <img id="thirdDayImg" alt="">
+                        <h4 id="maxTemp2" class="mt-4 text-white"></h4>
+                        <h6 id="minTemp2"></h6>
+                        <p class="pt-4 text-primary" id="case2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-8">
+                    <div class="item">
+                        <form class=" mt-5 ">
+                            <input type="text" placeholder="Enter your Eastmail to subscribe..." id="sub"
+                                class=" py-3 px-2 w-75">
+                            <button type="submit" class="py-2 px-4 ">Subscribe</button>
+                        </form>
+                        <p class="text-white my-3 pb-3">Copyright 2014 Company name. Designed by Themezy. All rights
+                            reserved
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class="item mt-5 d-flex icons justify-content-around">
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                        </a>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                        </a>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <i class="fa-brands fa-google-plus-g fa-2xl"></i>
+                        </a>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <i class="fa-brands fa-pinterest fa-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

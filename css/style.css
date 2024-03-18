@@ -1,0 +1,116 @@
+body{
+    height: 100vh;
+    background-image:url(../images/world.jpg) ;
+    background-position: center center;
+    background-size: cover;
+}
+nav{
+    background-color: #1E202B;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+a h1{
+    font-size: 20px;
+}
+
+ul li{
+border: transparent 2px solid;
+padding: 1px 25px;
+margin: 3px;
+border-radius: 20px;
+}
+ul .home{
+border-color: #009AD8;
+color: #009AD8;
+}
+ul li:hover{
+cursor: pointer;
+border: #009AD8 2px solid;
+padding: 1px 25px;
+color: #009AD8;
+border-radius: 20px;
+}
+button{
+    background-color: #009AD8;
+    color: white;
+    border-color: transparent;
+    border-radius: 20px;
+}
+#search{
+    width: 90%;
+    background-color: #1E202B;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+}
+#sub{
+    width: 90%;
+    background-color: #1E202B;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+}
+
+.title{
+    border-radius:50px;
+}
+.table-title1 {
+    color: #BFB6A0;
+    background-color: #2D303D;
+}
+.table-title2{
+    color: #BFB6A0;
+    background-color: #222530;
+}
+.table-title3{
+    color: #BFB6A0;
+    background-color: #2D303D;
+}
+.table-title4{
+    color: #BFB6A0;
+    background-color: #323544;
+}
+.table-title5{
+    color: #BFB6A0;
+    background-color: #262936;
+}
+.table-title6{
+    color: #BFB6A0;
+    background-color: #323544;
+}
+
+.foot img{
+    width: 20%;
+    height: 50%;
+    margin-right: 3px;
+}
+.p{
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+}
+.img{
+    width: 25%;
+    height: 50%;
+}
+footer{
+    background-color: #262936;
+}
+.icons a {
+    width: 50px;
+    height: 50px;
+    color: #009AD8;
+    background-color: #1E202B;
+    border-radius: 50%;
+}
+.icons a:hover {
+   cursor: pointer;
+}
+
+input:focus-visible {
+    outline: transparent;
+}
